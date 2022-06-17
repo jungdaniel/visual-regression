@@ -1,0 +1,33 @@
+.playbutton {
+  position: relative;
+  width: 96px;
+  height: 48px;
+  background: blue;
+  border: none;
+  cursor: pointer;
+}
+
+.playbutton::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.playbutton:hover {
+  background: rgb(0, 0, 181);
+}
+
+.playbutton:active {
+  background: rgb(0, 0, 140);
+}
+
+/*# sourceMappingURL=main.12be91b4.css.map*/
